@@ -6,6 +6,19 @@
     font-size: 8rem;
 }
 
-.iz-home-track-headline {
-    
+@keyframes headlineFade {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+.iz-home-track-headline > li:nth-child(1) {
+    animation-name: headlineFade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-delay: 3 */
 }
