@@ -6,24 +6,23 @@
     font-size: 8rem;
 }
 
-@keyframes headlineFade {
-    0% {
-      opacity: 0
-    }
-    100% {
-      opacity: 1
-    }
-  }
+@keyframes homeHeadline1 {
+    0% { opacity: 0 }
+    10% { opacity: 0 }
+    20% { opacity: 1 }
+    30% { opacity: 1 }
+    40% { opacity: 0 }
+    100% { opacity: 0 }
+}
 
 .iz-home-track-headline > li {
     opacity: 0;
     animation-name: headlineFade;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    /* animation-delay: 3 */
 }
-.iz-home-track-headline > li:nth-child(1) { animation-delay: 0s }
+.iz-home-track-headline > li:nth-child(1) { animation-name: homeHeadline1 }
 .iz-home-track-headline > li:nth-child(2) { animation-delay: 1s }
 .iz-home-track-headline > li:nth-child(3) { animation-delay: 2s }
 .iz-home-track-headline > li:nth-child(4) { animation-delay: 3s }
