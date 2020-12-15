@@ -15,6 +15,7 @@
 }
 
 .iz-home-track-headline > li {
+    opacity: 0;
     animation-duration: 10s;
     animation-name: homeHeadline;
     animation-iteration-count: infinite;
