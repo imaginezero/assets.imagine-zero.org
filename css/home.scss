@@ -1,6 +1,35 @@
-body.home {
-  .iz-home-numbers h2 {
+body.home, body.new-home {
+
+  /* Hides "Imagine Zero" on home page */
+  #site-content .entry-header h1 {
+    display: none
+  }
+
+  /* Home page: Replaces site name and whitespace with hero image with tagline */
+  #post-5 header.entry-header,
+  #post-349 header.entry-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .iz-home-hero {
+    background: url("https://imagine-zero.org/wp-content/uploads/2020/10/home-pars-sahin-V7uP-XzqX18-unsplash-2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+  }
+
+  @media (max-width: 1000px) {   
+    .iz-home-hero {
+    /* 	background-position: 50% bottom; */
+    }
+  }
+  .iz-home-hero {
+    h3 {
+      color: white;
+      text-shadow: 0 0 1rem black;
+    }
+    h2 {
       font-size: 8rem;
+    }
   }
   .iz-home-track-slider {
     p {

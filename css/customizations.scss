@@ -243,41 +243,6 @@ article.category-project .post-inner {
 	background-image: url(https://imagine-zero.org/wp-content/uploads/2020/08/linkedin-icon.png);
 }
 
-
-
-/* ### Special: Home page ### */
-
-/* Hides "Imagine Zero" on home page */
-.post-5 .entry-header h1 {
-	display: none
-}
-.post-349 .entry-header h1 {
-	display: none;
-}
-
-/* Home page: Replaces site name and whitespace with hero image with tagline */
-#post-5 header.entry-header,
-#post-349 header.entry-header {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-.iz-home-hero {
-	background: url("https://imagine-zero.org/wp-content/uploads/2020/10/home-pars-sahin-V7uP-XzqX18-unsplash-2.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 60%;
-}
-
-@media (max-width: 1000px) {   
-.iz-home-hero {
-/* 	background-position: 50% bottom; */
-}
-}
-.iz-home-hero h3 {
-	color: white;
-	text-shadow: 0 0 1rem black;
-}
-
-
 /* Author pages */
 body.author main article {
 	display: none;
