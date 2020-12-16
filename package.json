@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass ./css/style.scss public/style.css",
-    "watch": "sass --watch ./css/style.scss public/style.css"
+    "watch": "sass --watch ./css/style.scss public/style.css",
+    "serve": "http-server public -c-1"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/imaginezero/static.imagine-zero.org#readme",
   "devDependencies": {
+    "http-server": "^0.12.3",
     "sass": "^1.30.0"
   }
 }

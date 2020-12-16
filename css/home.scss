@@ -1,4 +1,6 @@
-body.home, body.new-home {
+@use "home/track-slider.scss";
+
+body.home, body.page-id-3959 {
 
   /* Hides "Imagine Zero" on home page */
   #site-content .entry-header h1 {
@@ -32,103 +34,20 @@ body.home, body.new-home {
     }
   }
   .iz-home-track-slider {
-    p {
-        display: inline-block;
-        padding: 0;
-        height: 20px;
-        margin: 0;
-        vertical-align: middle;
-    }
-    .slider {
-      height: 20px;
-      width: 400px;
-      /* overflow: visible; */
-      position: relative;
-      display: inline-block;
-      vertical-align: middle;
-    }
+    @include track-slider.track-slider;
+  }
+  .iz-home-track-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .mask {
-      overflow: hidden;
-      height: 100%;
-    }
-
-    .slider ul {
-      margin: 0;
-      padding: 0;
-      position: relative;
-    }
-
-    .slider li {
-      width: 680px;
-      height: 20px;
-      position: absolute;
-      top: -25px;
-      list-style: none;
-    }
-
-    .slider li.anim1 { animation: cycle 15s linear infinite; }
-    .slider li.anim2 { animation: cycle2 15s linear infinite; }
-    .slider li.anim3 { animation: cycle3 15s linear infinite; }
-    .slider li.anim4 { animation: cycle4 15s linear infinite; }
-    .slider li.anim5 { animation: cycle5 15s linear infinite; }
-
-    .slider:hover li {
-      animation-play-state: paused;
-    }
-
-    @keyframes cycle {
-      0% { top: 0px; }
-      4% { top: 0px; }
-      16% { top: 0px; opacity: 1; z-index: 0; }
-      20% { top: 25px; opacity: 0; z-index: 0; }
-      21% { top: -25px; opacity: 0; z-index: -1; }
-      50% { top: -25px; opacity: 0; z-index: -1; }
-      92% { top: -25px; opacity: 0; z-index: 0; }
-      96% { top: -25px; opacity: 0; }
-      100% { top: 0px; opacity: 1; }
-    }
-
-    @keyframes cycle2 {
-      0% { top: -25px; opacity: 0; }
-      16% { top: -25px; opacity: 0; }
-      20% { top: 0px; opacity: 1; }
-      24% { top: 0px; opacity: 1; }
-      36% { top: 0px; opacity: 1; z-index: 0; }
-      40% { top: 25px; opacity: 0; z-index: 0; }
-      41% { top: -25px; opacity: 0; z-index: -1; }
-      100% { top: -25px; opacity: 0; z-index: -1; }
-    }
-
-    @keyframes cycle3 {
-      0% { top: -25px; opacity: 0; }
-      36% { top: -25px; opacity: 0; }
-      40% { top: 0px; opacity: 1; }
-      44% { top: 0px; opacity: 1; }
-      56% { top: 0px; opacity: 1; z-index: 0; }
-      60% { top: 25px; opacity: 0; z-index: 0; }
-      61% { top: -25px; opacity: 0; z-index: -1; }
-      100% { top: -25px; opacity: 0; z-index: -1; }
-    }
-
-    @keyframes cycle4 {
-      0% { top: -25px; opacity: 0; }
-      56% { top: -25px; opacity: 0; }
-      60% { top: 0px; opacity: 1; }
-      64% { top: 0px; opacity: 1; }
-      76% { top: 0px; opacity: 1; z-index: 0; }
-      80% { top: 25px; opacity: 0; z-index: 0; }
-      81% { top: -25px; opacity: 0; z-index: -1; }
-      100% { top: -25px; opacity: 0; z-index: -1; }
-    }
-
-    @keyframes cycle5 {
-      0% { top: -25px; opacity: 0; }
-      76% { top: -25px; opacity: 0; }
-      80% { top: 0px; opacity: 1; }
-      84% { top: 0px; opacity: 1; }
-      96% { top: 0px; opacity: 1; z-index: 0; }
-      100% { top: 25px; opacity: 0; z-index: 0; }
+    li {
+      flex-shrink: 0;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: black;
+      border-radius: 50px;
     }
   }
 }
