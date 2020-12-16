@@ -7,9 +7,126 @@ body.home, body.page-id-3959 {
     display: none
   }
 
+  .entry-content > * {
+    background: white
+  }
+  .alignfull {
+    background: #f2f2f2;
+  }
+  
+  $block-space-v: 6rem;
+
+  .wp-block-group.iz-bg-block,
+  .wp-block-group.iz-bg-block-upper,
+  .wp-block-group.iz-bg-block-lower {
+    margin: 4rem 0;
+  }
+  .wp-block-group.iz-bg-block-upper { margin-bottom: 0 }
+  .wp-block-group.iz-bg-block-lower { margin-top: 0 }
+
+
+  .iz-bg-block {
+    padding: $block-space-v 0;
+  }
+  .iz-bg-block-upper {
+    padding: $block-space-v 0 0 0;
+  }
+  .iz-bg-block-lower {
+    padding: 0 0 $block-space-v 0;
+  }
+
+
+  @media (min-width: 500px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: -6% !important;
+  } }
+  
+  @media (min-width: 1000px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: -6% !important;
+    &::before { opacity: 0};
+  } }
+
+  @media (min-width: 1100px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 4% !important;
+  } }
+
+  @media (min-width: 1200px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 8% !important;
+  } }
+
+  @media (min-width: 1300px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 12% !important;
+  } }
+
+  @media (min-width: 1400px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 16% !important;
+  } }
+
+
+  @media (min-width: 1500px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 20% !important;
+  } }
+
+  @media (min-width: 1600px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 21% !important;
+  } }
+
+  @media (min-width: 1700px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 22.5% !important;
+  } }
+
+  @media (min-width: 1800px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 24% !important;
+  } }
+
+  @media (min-width: 1900px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 25.5% !important;
+  } }
+  @media (min-width: 2000px) { .wp-block-coblocks-hero .has-background-image {
+    background-position-y: 27% !important;
+  } }
+  .wp-block-coblocks-hero {
+    text-shadow: 0 0 20px black;
+  }
+
+  .iz-home-cta {
+    
+    .wp-block-button {
+      width: calc(50% - 1rem);
+      margin: 0.5rem;
+      &:last-child {
+        width: calc(100% - 1rem);
+      }
+    }
+  }
+  
+  .iz-home-news-big article {
+    background-color: black;
+    margin-bottom: 4rem;
+
+    .post-thumbnail {
+      margin: 0;
+    }
+    .entry-wrapper {
+      padding: 2rem;
+      color: white;
+    }
+  }
+
+  .iz-home-news-small .entry-wrapper {
+    display: flex;
+    flex-direction: column;
+    .entry-meta { align-self: end; }
+  }
+
+
+
+
+
+
+
+
   /* Home page: Replaces site name and whitespace with hero image with tagline */
-  #post-5 header.entry-header,
-  #post-349 header.entry-header {
+  header.entry-header {
     padding-top: 0;
     padding-bottom: 0;
   }
