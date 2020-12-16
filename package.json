@@ -1,0 +1,24 @@
+{
+  "name": "static.imagine-zero.org",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./css/style.scss public/style.css",
+    "watch": "sass --watch ./css/style.scss public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaginezero/static.imagine-zero.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imaginezero/static.imagine-zero.org/issues"
+  },
+  "homepage": "https://github.com/imaginezero/static.imagine-zero.org#readme",
+  "devDependencies": {
+    "sass": "^1.30.0"
+  }
+}
