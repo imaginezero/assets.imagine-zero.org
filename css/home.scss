@@ -13,28 +13,6 @@ body.home, body.page-id-3959 {
   .alignfull {
     background: #f2f2f2;
   }
-  
-  $block-space-v: 6rem;
-
-  .wp-block-group.iz-bg-block,
-  .wp-block-group.iz-bg-block-upper,
-  .wp-block-group.iz-bg-block-lower {
-    margin: 4rem 0;
-  }
-  .wp-block-group.iz-bg-block-upper { margin-bottom: 0 }
-  .wp-block-group.iz-bg-block-lower { margin-top: 0 }
-
-
-  .iz-bg-block {
-    padding: $block-space-v 0;
-  }
-  .iz-bg-block-upper {
-    padding: $block-space-v 0 0 0;
-  }
-  .iz-bg-block-lower {
-    padding: 0 0 $block-space-v 0;
-  }
-
 
   @media (min-width: 500px) { .wp-block-coblocks-hero .has-background-image {
     background-position-y: -6% !important;

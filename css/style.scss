@@ -1,2 +1,23 @@
 @use 'home.scss';
 @use 'customizations.scss';
+
+$block-space-v: 6rem;
+
+.wp-block-group.iz-bg-block,
+.wp-block-group.iz-bg-block-upper,
+.wp-block-group.iz-bg-block-lower {
+  margin: 4rem 0;
+}
+.wp-block-group.iz-bg-block-upper { margin-bottom: 0 }
+.wp-block-group.iz-bg-block-lower { margin-top: 0 }
+
+
+.iz-bg-block {
+  padding: $block-space-v 0;
+}
+.iz-bg-block-upper {
+  padding: $block-space-v 0 0 0;
+}
+.iz-bg-block-lower {
+  padding: 0 0 $block-space-v 0;
+}
