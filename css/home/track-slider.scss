@@ -1,6 +1,18 @@
 @mixin track-slider {
-    width: 360px !important;
-    text-align: center;
+    
+  $slider-width: 190px;
+  $total-width: $slider-width + 150px;
+  $breakpoint: $total-width + 100px;
+
+
+  text-align: left;
+  width: auto !important;
+
+    @media (min-width: $breakpoint) {
+      text-align: center;
+      width: $total-width !important;
+    }
+    
 
     p {
         display: inline-block;
@@ -11,7 +23,7 @@
     }
     .slider {
       height: 30px;
-      width: 210px;
+      width: $slider-width;
       /* overflow: visible; */
       position: relative;
       display: inline-block;
