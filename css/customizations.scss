@@ -1,50 +1,16 @@
-.iz-phileas-header-first-row {
-	margin-bottom: 2rem	!important;
+// Removes whitespace between header and hero images/sections
+.wp-block-coblocks-hero.alignfull {
+	margin-top: 0
+}
+.wp-block-coblocks-hero .iz-hero-text-shadow {
+	// text-shadow: 0 0 20px black;
+	// background-color: #1BE08B;
+	
 }
 
-.iz-phileas-header-first-row .wp-block-columns {
-	margin-bottom: 0 !important;
-}
-.iz-phileas-header-first-row .wp-block-columns .wp-block-image {
-	margin-bottom: 0 !important;
-}
 
-.iz-phileas-header-second-row {
-	margin-top: 0	!important;
-/* Reduces vertical space between items and flag on mobile */
-	grid-gap: 0 !important;
-}
-
-/* Removes whitespace around language link */
-.iz-phileas-header-nav-first-col {
-	padding-top: 0.5rem;
-}
-.iz-phileas-header-second-row p {
-	margin: 0.4rem 0 0 0;
-}
-.iz-phileas-header-second-row  .wpml-ls-link {
-	padding: 0
-}
-
-.iz-phileas-header-second-row .wpml-ls {
-	padding: 0;
-}
-
-/* Logo */
-figure.alignleft.size-large.is-resized {
-/* 	margin-top: 0 */
-}
-div[data-carousel-extra] {
-/* 	margin-bottom: 2rem !important; */
-}
-
-.wp-block-navigation-link__content:first-child {
-/*  padding-left: 0 */
-}
-
-.wp-block-navigation {
-/* 	margin-top:0; */
-/* 	margin-bottom:0 */
+.iz-no-margin {
+	margin: 0;
 }
 
 /* ### Header ### */
@@ -174,15 +140,6 @@ article.category-article header.entry-header .intro-text {
 	margin-top: 0;
 }
 
-/* ### Phileas */
-.iz-phileas-header {
-	margin-bottom: 0;
-}
-
-.post-1163 .wp-block-coblocks-gallery-carousel .flickity-button.previous,
-.post-1163 .wp-block-coblocks-gallery-carousel .flickity-button.next {
-	background-color: #1BE08B
-}
 
 /* ### Special: Full page templates ### */
 /* Hides language switcher footer on pages with no header/footer */

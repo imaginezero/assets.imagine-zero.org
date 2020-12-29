@@ -1,0 +1,41 @@
+
+.iz-phileas-header-first-row {
+	margin-bottom: 2rem	!important;
+}
+
+.iz-phileas-header-first-row .wp-block-columns {
+	margin-bottom: 0 !important;
+}
+.iz-phileas-header-first-row .wp-block-columns .wp-block-image {
+	margin-bottom: 0 !important;
+}
+
+.iz-phileas-header-second-row {
+	margin-top: 0	!important;
+/* Reduces vertical space between items and flag on mobile */
+	grid-gap: 0 !important;
+}
+
+/* Removes whitespace around language link */
+.iz-phileas-header-nav-first-col {
+	padding-top: 0.5rem;
+}
+.iz-phileas-header-second-row p {
+	margin: 0.4rem 0 0 0;
+}
+.iz-phileas-header-second-row  .wpml-ls-link {
+	padding: 0
+}
+
+.iz-phileas-header-second-row .wpml-ls {
+	padding: 0;
+}
+
+.iz-phileas-header {
+	margin-bottom: 0;
+}
+
+.post-1163 .wp-block-coblocks-gallery-carousel .flickity-button.previous,
+.post-1163 .wp-block-coblocks-gallery-carousel .flickity-button.next {
+	background-color: #1BE08B
+}
