@@ -57,9 +57,19 @@ body.home, body.page-id-3959 {
   } }
   .wp-block-coblocks-hero {
     text-shadow: 0 0 20px black;
+    margin-bottom: 0;
   }
 
+  // .iz-home-portfolio-lower {
+  //   margin-bottom: 0 !important;
+  // }
+
   .iz-home-logo-animation {
+    background-color: #fbfbfb;
+    margin: 0 !important;
+
+    + div { margin-top: 0 !important}
+
     > div {
       display: flex;
       align-items: center;
@@ -71,10 +81,11 @@ body.home, body.page-id-3959 {
         background-size: 100%;
         background-repeat: no-repeat;
         background-position-y: center;
-        width: 1400px;
-        height: 400px;
-        margin: 0;
+        width: 625px;
+        height: 150px;
+        margin: 4rem !important;
         padding: 0;
+        max-width: 50rem !important;
       }
     }
   }
