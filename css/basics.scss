@@ -1,0 +1,30 @@
+@use 'variables' as variables;
+
+/* Makes link underlines consistent */
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit !important;
+    text-decoration: underline !important;
+	text-decoration-color: variables.$colorPrimary !important;
+}
+a:hover {
+	color: variables.$colorPrimary !important;
+}
+
+/* Takes the fixed header into account and adds white space when linking/scrolling to anchored headlines */
+h1[id]::before,
+h2[id]::before,
+h3[id]::before,
+h4[id]::before,
+h5[id]::before {
+  content: '';
+  display: block;
+  height:      8rem;
+  margin-top: -8rem;
+  visibility: hidden;
+}

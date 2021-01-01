@@ -1,0 +1,13 @@
+/* Hides author and date for posts of type project */
+article.category-project .post-meta-wrapper {
+	display: none
+}
+/* Hides the excerpt from posts of type Project */
+article.category-project .entry-header .intro-text {
+	display: none
+}
+
+/* Reduces whitespace between title and content for posts of type Project */
+article.category-project .post-inner {
+	padding-top: 0;
+}

@@ -1,4 +1,4 @@
-@use "home/track-slider.scss";
+@use "home-track-slider.scss" as slider;
 
 body.home, body.page-id-3959 {
 
@@ -129,7 +129,7 @@ body.home, body.page-id-3959 {
     }
   }
   .iz-home-track-slider {
-    @include track-slider.track-slider;
+    @include slider.track-slider;
     margin: 2rem auto;
   }
   .iz-home-track-icons {

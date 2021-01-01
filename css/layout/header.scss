@@ -1,0 +1,24 @@
+/* ### Header ### */
+
+/* Reduces vertical whitespace */
+.header-inner {
+	padding-top: 1.8rem !important;
+	padding-bottom: 1.8rem !important;
+}
+
+
+/* Makes the site logo smaller (on high-ppi devices that works better than uploading a smaller file) */
+.site-logo img {
+	max-height:35px !important
+}
+
+/* Moves burger menu icon up to make sure it's centered including the "Menu* label added by the Twentig plugin */
+#site-header button.nav-toggle {
+	margin-top: -20px
+}
+
+/* Hides burger menu when navigation is visible */
+@media (min-width: 1000px) {   #site-header .toggle-wrapper   {
+    display: none !important;
+  }
+}

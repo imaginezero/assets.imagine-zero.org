@@ -1,25 +1,16 @@
-@use 'home.scss';
-@use 'customizations.scss';
-@use 'phileas.scss';
-@use 'donors.scss';
-@use 'act.scss';
+@use 'basics.scss';
+@use 'elements.scss';
+@use 'helpers.scss';
 
-$block-space-v: 6rem;
+@use 'layout/header.scss';
+@use 'layout/content.scss';
+@use 'layout/footer.scss';
 
-.iz-bg-block,
-.iz-bg-block-upper,
-.iz-bg-block-lower {
-  margin: 4rem 0  !important;
-  max-width: none !important;
-  width: 100% !important;
-  background: #f2f2f2;
-  padding: $block-space-v 0 !important;
-}
-.iz-bg-block-upper {
-  padding: $block-space-v 0 0 0 !important;
-  margin-bottom: 0 !important
-}
-.iz-bg-block-lower {
-  padding: 0 0 $block-space-v 0 !important;
-  margin-top: 0 !important
-}
+@use 'pages/home.scss';
+@use 'pages/author.scss';
+@use 'pages/project.scss';
+@use 'pages/article.scss';
+@use 'pages/donors.scss';
+@use 'pages/act.scss';
+@use 'pages/phileas.scss';
+@use 'pages/impact1on1.scss';

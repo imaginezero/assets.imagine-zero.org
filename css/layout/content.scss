@@ -1,0 +1,23 @@
+/* ### Page content ### */
+
+/* Hides publish date from articles because they're supposed to get updated */
+article.category-article header.entry-header .post-meta-wrapper .post-date {
+	display: none
+}
+
+/* Underlines post titles in overviews to indicate that they're clickable */
+article .entry-title a {
+    text-decoration: underline !important;
+	text-decoration-color: #1BE08B !important;
+}
+
+/* ### Special: Tables ### */
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: #f0f0f0
+}
+
+/* ### Special: Full page templates ### */
+/* Hides language switcher footer on pages with no header/footer */
+.page-template-tw-no-header-footer .wpml-ls-statics-footer.wpml-ls {
+	display: none
+}
