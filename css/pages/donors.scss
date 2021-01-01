@@ -1,3 +1,5 @@
+@use '../variables' as variables;
+
 body.page-id-4279 {
     .wp-block-coblocks-hero__inner {
         align-items: start;
@@ -133,6 +135,39 @@ body.page-id-4279 {
                         @media (max-width: 600px) { font-size: 3.0vw; }
                     }
                 }
+            }
+        }
+    }
+
+    .iz-testimonials {
+        background: black;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        margin: 0 !important;
+        padding: 6rem 3rem;
+    }
+
+    .sp-testimonial-pro-wrapper {
+
+        .sp-testimonial-pro {
+
+            .tpro-client-name,
+            .tpro-client-designation-company {
+                font-size: 2.4rem !important;
+                color: variables.$colorPaleGray !important;
+                display: inline-block;
+                font-family: variables.$fontHeadline;
+            }
+            
+            .tpro-client-name {
+                padding-right: 0.5rem;
+                &::after { content: ',' }
+            }
+            
+            .tpro-testimonial-text p {
+                font-size: 1.15em !important;
+                color: variables.$colorPaleGray !important;
             }
         }
     }
