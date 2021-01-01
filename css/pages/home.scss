@@ -60,13 +60,15 @@ body.home, body.page-id-3959 {
     margin-bottom: 0 !important;
   }
 
-  // .iz-home-portfolio-lower {
-  //   margin-bottom: 0 !important;
-  // }
+  .wp-block-columns {
+    justify-items: center;
+    justify-content: center;
+  }
 
   .iz-home-logo-animation {
     background-color: #fbfbfb;
     margin: 0 !important;
+    padding: 0 !important;
 
     + div { margin-top: 0 !important}
 
@@ -127,38 +129,12 @@ body.home, body.page-id-3959 {
     }
   }
 
-
-
-
-
-
-
-
   /* Home page: Replaces site name and whitespace with hero image with tagline */
   header.entry-header {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .iz-home-hero {
-    background: url("https://imagine-zero.org/wp-content/uploads/2020/10/home-pars-sahin-V7uP-XzqX18-unsplash-2.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 60%;
-  }
 
-  @media (max-width: 1000px) {   
-    .iz-home-hero {
-    /* 	background-position: 50% bottom; */
-    }
-  }
-  .iz-home-hero {
-    h3 {
-      color: white;
-      text-shadow: 0 0 1rem black;
-    }
-    h2 {
-      font-size: 8rem;
-    }
-  }
   .iz-home-track-slider {
     @include slider.track-slider;
     margin: 2rem auto;
