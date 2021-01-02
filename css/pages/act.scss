@@ -1,4 +1,26 @@
 body.page-id-73 {
+
+  .iz-act-top-buttons {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    @media (min-width: 700px) { justify-content: center; }
+    margin: 0;
+    
+
+    .wp-block-button {
+      width: 45%;
+      @media (min-width: 700px) { width: 30rem; margin: 0 2rem; }
+
+      margin: 0;
+      > a {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  }
+
   .wp-block-jetpack-layout-grid {
       background: linear-gradient(#040808,#0c1718, #0c1718);
     // background: black;
