@@ -45,39 +45,73 @@ button, .tw-btn-rounded .button, .tw-btn-rounded .faux-button, .tw-btn-rounded .
 	.sp-testimonial-pro-wrapper {
 
 		.sp-testimonial-pro {
-			
-			.tpro-client-image {
-				@media (max-width: 500px) { float: none !important }
-				img {
-					min-width: 150px;
-					min-height: 150px;
-					@media (max-width: 500px) { min-width: 0; width: 75px; min-height: 0; height: 75px;}
-					@media (max-width: 700px) { min-width: 0; width: 100px; min-height: 0; height: 100px;}
-					background: #aaa !important;
+
+			.tpro-testimonial-content-area {
+				background: none !important;
+				&:before { display: none; }
+				&:after { display: none; }
+
+				.tpro-testimonial-text {
+					&:before {
+						content: '‟';
+						font-size: 5rem;
+						color: #fff;
+						vertical-align: text-top;
+					}
+					p {
+						font-size: 3rem !important;
+						color: variables.$colorPaleGray !important;
+
+						em { font-style: normal; 
+							color: #bbb !important;}
+
+						img {
+							max-width: 30px;
+							max-height: 30px;
+							margin: 2rem;
+							display: inline-block;
+						}
+					}
 				}
 			}
 
-			.tpro-client-name,
-			.tpro-client-designation-company {
-				color: variables.$colorPaleGray !important;
-				// display: inline-block;
-			}
-			
-			.tpro-client-name {
-				font-family: variables.$fontHeadline;
-				font-size: 2.4rem !important;
-				padding-right: 0.5rem;
-				// &::after { content: ',' }
-			}
+			.tpro-testimonial-meta-area {
 
-			.tpro-client-designation-company {
-				font-size: 2rem !important;
-				color: #bbb !important;
-			}
-			
-			.tpro-testimonial-text p {
-				font-size: 2rem !important;
-				color: variables.$colorPaleGray !important;
+				background: none !important;
+
+				.tpro-client-image {
+					float: left;
+					@media (max-width: 500px) { float: none !important }
+
+					margin-right: 2rem !important; 
+
+					img {
+						max-width: 100px;
+						max-height: 100px;
+						@media (max-width: 500px) { min-width: 0; width: 75px; min-height: 0; height: 75px;}
+						@media (max-width: 700px) { min-width: 0; width: 100px; min-height: 0; height: 100px;}
+						background: #aaa !important;
+					}
+				}
+
+				.tpro-client-name,
+				.tpro-client-designation-company {
+					color: variables.$colorPaleGray !important;
+					// display: inline-block;
+				}
+				
+				.tpro-client-name {
+					font-family: variables.$fontHeadline;
+					font-size: 2.4rem !important;
+					padding-right: 0.5rem;
+					// &::after { content: ',' }
+				}
+	
+				.tpro-client-designation-company {
+					font-size: 2rem !important;
+					color: #bbb !important;
+				}
+				
 			}
 		}
 	}
