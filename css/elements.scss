@@ -22,10 +22,63 @@ button, .tw-btn-rounded .button, .tw-btn-rounded .faux-button, .tw-btn-rounded .
 	white-space: normal;
 }
 
+
+
 // # Alerts
 
 /* Styles alert titles like headlines */
 .wp-block-coblocks-alert__title {
 	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	  font-weight: bold;
-  }
+	font-weight: bold;
+}
+
+// # Testimonials
+
+.iz-testimonials {
+	background: black;
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	margin: 0 !important;
+	padding: 6rem 0;
+	
+	.sp-testimonial-pro-wrapper {
+
+		.sp-testimonial-pro {
+			
+			.tpro-client-image {
+				@media (max-width: 500px) { float: none !important }
+				img {
+					min-width: 150px;
+					min-height: 150px;
+					@media (max-width: 500px) { min-width: 0; width: 75px; min-height: 0; height: 75px;}
+					@media (max-width: 700px) { min-width: 0; width: 100px; min-height: 0; height: 100px;}
+					background: #aaa !important;
+				}
+			}
+
+			.tpro-client-name,
+			.tpro-client-designation-company {
+				color: variables.$colorPaleGray !important;
+				// display: inline-block;
+			}
+			
+			.tpro-client-name {
+				font-family: variables.$fontHeadline;
+				font-size: 2.4rem !important;
+				padding-right: 0.5rem;
+				// &::after { content: ',' }
+			}
+
+			.tpro-client-designation-company {
+				font-size: 2rem !important;
+				color: #bbb !important;
+			}
+			
+			.tpro-testimonial-text p {
+				font-size: 2rem !important;
+				color: variables.$colorPaleGray !important;
+			}
+		}
+	}
+}
