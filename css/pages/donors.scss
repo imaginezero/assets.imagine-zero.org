@@ -2,68 +2,79 @@
 
 body.page-id-4279 {
     .wp-block-coblocks-hero__inner {
-        align-items: start;
+        // align-items: start;
         background-color: black;
-        background-position: center 50px !important;
+        background-position: center 200px !important;
+
+        // .has-background-image {
+        background-size: 100%;
+        @media (max-width:  2800px) { background-position: center 230px !important;}
+        @media (max-width:  2100px) { background-position: center 240px !important;}
+        @media (max-width:  1900px) { background-position: center 250px !important;}
+        @media (max-width:  1000px) { background-size: 150%;}
+        @media (max-width:  600px) { background-size: 200%; }
+        @media (max-width:  400px) { background-size: 300%; }
+        @media (max-width:  300px) { background-size: 400%; }
+        @media (max-width:  200px) { background-size: cover; background-position: bottom !important;}
+        // }
     }
 
     #site-content article header { display: none }
 
     // background-color: black;
-    background-size: contain;
+    
+    // @media (min-width: 700px) { .wp-block-coblocks-hero .has-background-image {
+        //     background-size: cover;
+        // } }
 
-    @media (min-width: 700px) { .wp-block-coblocks-hero .has-background-image {
-        background-size: cover;
-    } }
+    // @media (min-width: 900px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: -10% !important;
+    // } }
 
-    @media (min-width: 900px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: -10% !important;
-    } }
+    // @media (min-width: 1000px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: -6% !important;
+    //     &::before { opacity: 0};
+    // } }
 
-    @media (min-width: 1000px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: -6% !important;
-        &::before { opacity: 0};
-    } }
+    // @media (min-width: 1100px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 10% !important;
+    // } }
 
-    @media (min-width: 1100px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 10% !important;
-    } }
+    // @media (min-width: 1200px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 20% !important;
+    // } }
 
-    @media (min-width: 1200px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 20% !important;
-    } }
+    // @media (min-width: 1300px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 24% !important;
+    // } }
 
-    @media (min-width: 1300px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 24% !important;
-    } }
-
-    @media (min-width: 1400px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 27% !important;
-    } }
+    // @media (min-width: 1400px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 27% !important;
+    // } }
 
 
-    @media (min-width: 1500px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 30% !important;
-    } }
+    // @media (min-width: 1500px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 30% !important;
+    // } }
 
-    @media (min-width: 1600px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 35% !important;
-    } }
+    // @media (min-width: 1600px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 35% !important;
+    // } }
 
-    @media (min-width: 1700px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 41% !important;
-    } }
+    // @media (min-width: 1700px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 41% !important;
+    // } }
 
-    @media (min-width: 1800px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 42% !important;
-    } }
+    // @media (min-width: 1800px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 42% !important;
+    // } }
 
-    @media (min-width: 1900px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 43% !important;
-    } }
-    @media (min-width: 2000px) { .wp-block-coblocks-hero .has-background-image {
-        background-position-y: 47% !important;
-    } }
+    // @media (min-width: 1900px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 43% !important;
+    // } }
+    // @media (min-width: 2000px) { .wp-block-coblocks-hero .has-background-image {
+    //     background-position-y: 47% !important;
+    // } }
 
     .iz-donors-circles {
 

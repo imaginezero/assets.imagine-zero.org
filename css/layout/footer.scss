@@ -25,3 +25,10 @@
 	text-decoration: underline;
 	text-decoration-color: #1BE08B;
 }
+
+
+/* ### Special: Full page templates ### */
+/* Hides language switcher footer on pages with no header/footer */
+.page-template-tw-no-header-footer .wpml-ls-statics-footer.wpml-ls {
+	display: none
+}
