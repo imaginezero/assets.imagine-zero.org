@@ -5,6 +5,8 @@ body.page-id-491 {
     max-width: 120rem !important;
     .team-member {
 
+      cursor: pointer;
+
       @media (min-width: 500px) {
         flex: 0 0 50%;
         max-width: 50%;
