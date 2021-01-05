@@ -1,4 +1,5 @@
 /* ### Page content ### */
+$block-space-v: 6rem;
 
 /* Hides publish date from articles because they're supposed to get updated */
 article.category-article header.entry-header .post-meta-wrapper .post-date {
@@ -18,4 +19,40 @@ article .entry-title a {
 /* ### Special: Tables ### */
 .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
 	background-color: #f0f0f0
+}
+
+.iz-no-margin {
+	margin: 0;
+}
+
+/* Special: Allows to clear floats */
+.iz-clear-both {
+	clear: both;
+}
+.iz-table-bigger-first-column table th {
+	width: 80%
+}
+.iz-table-bigger-first-column table th:first-child {
+	width: 20%
+}
+
+.iz-bg-block-upper {
+  padding: $block-space-v 0 0 0 !important;
+  margin-bottom: 0 !important
+}
+.iz-bg-block-lower {
+  padding: 0 0 $block-space-v 0 !important;
+  margin-top: 0 !important
+}
+
+.iz-bg-block,
+.iz-bg-block-upper,
+.iz-bg-block-lower {
+  margin: 4rem 0  !important;
+  &.iz-margin-no-top { margin-top: 0 !important; }
+  &.iz-margin-no-bottom { margin-bottom: 0 !important; }
+  max-width: none !important;
+  width: 100% !important;
+  background: #f2f2f2;
+  padding: $block-space-v 4rem !important;
 }
