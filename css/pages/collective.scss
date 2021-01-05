@@ -1,0 +1,62 @@
+body.page-id-4821,
+body.page-id-84,
+body.page-id-491 {
+  .tlp-team-container {
+    max-width: 120rem !important;
+    .team-member {
+
+      @media (min-width: 500px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      @media (min-width: 800px) {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+
+      img {
+        width: 100%;
+        filter: grayscale(90%) contrast(1.1);
+      }
+      .tlp-content {
+        height: 9rem;
+        overflow: hidden;
+        background: none !important;
+        > * {color: black};
+        padding: 1rem 0 3rem;
+
+        h3, .designation {
+          
+          @media (min-width: 1200px) { font-size: 21px; }
+          @media (min-width: 1100px) { font-size: 19px; }
+          @media (min-width: 800px) { font-size: 18px; }
+          @media (min-width: 650px) { font-size: 21px; }
+          @media (min-width: 500px) { font-size: 18px; }
+        }
+      }
+      .short-bio {
+        display: none;
+        a { display: block; }
+      }
+      &.expanded .short-bio { display: block }
+      .tpl-social { display: none }
+      &.expanded .tpl-social { display: block }
+
+      .tpl-social {
+        .fa-linkedin,
+        .fa-twitter {
+          color: #fff;
+          width: 32px;
+          height: 32px;
+        }
+        .fa-twitter { background: #3aa9e0; }
+        .fa-linkedin { background: #0080b1; }
+      }
+    } 
+  }
+
+  .iz-team-advisors {
+    .tlp-row { justify-content: center; }
+  }
+}
