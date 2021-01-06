@@ -7,7 +7,7 @@ body.home {
   #site-content .entry-header h1 {
     display: none
   }
-  .wp-block-coblocks-hero s.has-background-image {
+  .wp-block-coblocks-hero .has-background-image {
     @media (min-width:  500px) { background-position-y: -6% !important; }
     @media (min-width: 1000px) { background-position-y: -6% !important; &::before { opacity: 0}; }
     @media (min-width: 1100px) { background-position-y:  4% !important; }
