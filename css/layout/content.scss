@@ -45,10 +45,13 @@ article .entry-title a {
   margin-top: 0 !important
 }
 
+.iz-bg-block {
+	margin: 4rem 0  !important;
+}
+
 .iz-bg-block,
 .iz-bg-block-upper,
 .iz-bg-block-lower {
-  margin: 4rem 0  !important;
   &.iz-margin-no-top { margin-top: 0 !important; }
   &.iz-margin-no-bottom { margin-bottom: 0 !important; }
   max-width: none !important;
