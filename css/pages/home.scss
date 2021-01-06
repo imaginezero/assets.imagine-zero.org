@@ -1,61 +1,26 @@
 @use "home-track-slider.scss" as slider;
 @use "../variables" as variables;
 
-body.home, body.page-id-3959 {
+body.home {
 
   /* Hides "Imagine Zero" on home page */
   #site-content .entry-header h1 {
     display: none
   }
-
-  @media (min-width: 500px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: -6% !important;
-  } }
-  
-  @media (min-width: 1000px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: -6% !important;
-    &::before { opacity: 0};
-  } }
-
-  @media (min-width: 1100px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 4% !important;
-  } }
-
-  @media (min-width: 1200px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 8% !important;
-  } }
-
-  @media (min-width: 1300px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 12% !important;
-  } }
-
-  @media (min-width: 1400px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 16% !important;
-  } }
-
-
-  @media (min-width: 1500px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 20% !important;
-  } }
-
-  @media (min-width: 1600px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 21% !important;
-  } }
-
-  @media (min-width: 1700px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 22.5% !important;
-  } }
-
-  @media (min-width: 1800px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 24% !important;
-  } }
-
-  @media (min-width: 1900px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 25.5% !important;
-  } }
-  @media (min-width: 2000px) { .wp-block-coblocks-hero .has-background-image {
-    background-position-y: 27% !important;
-  } }
+  .wp-block-coblocks-hero s.has-background-image {
+    @media (min-width:  500px) { background-position-y: -6% !important; }
+    @media (min-width: 1000px) { background-position-y: -6% !important; &::before { opacity: 0}; }
+    @media (min-width: 1100px) { background-position-y:  4% !important; }
+    @media (min-width: 1200px) { background-position-y:  8% !important; }
+    @media (min-width: 1300px) { background-position-y: 12% !important; }
+    @media (min-width: 1400px) { background-position-y: 16% !important; }
+    @media (min-width: 1500px) { background-position-y: 20% !important; }
+    @media (min-width: 1600px) { background-position-y: 21% !important; }
+    @media (min-width: 1700px) { background-position-y: 22.5% !important; }
+    @media (min-width: 1800px) { background-position-y: 24% !important; }
+    @media (min-width: 1900px) { background-position-y: 25.5% !important; }
+    @media (min-width: 2000px) { background-position-y: 27% !important; }
+  }
   .wp-block-coblocks-hero {
     text-shadow: 0 0 20px black;
     margin-bottom: 0 !important;
@@ -67,7 +32,6 @@ body.home, body.page-id-3959 {
   }
 
   .iz-home-logo-animation {
-    background-color: variables.$colorPaleGray;
     margin: 0 !important;
     padding: 0 !important;
 

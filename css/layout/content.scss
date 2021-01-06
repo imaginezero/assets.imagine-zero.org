@@ -1,5 +1,3 @@
-/* ### Page content ### */
-$block-space-v: 6rem;
 
 /* Hides publish date from articles because they're supposed to get updated */
 article.category-article header.entry-header .post-meta-wrapper .post-date {
@@ -37,16 +35,19 @@ article .entry-title a {
 }
 
 .iz-bg-block-upper {
-  padding: $block-space-v 0 0 0 !important;
-  margin-bottom: 0 !important
+  padding: 6rem 0 0 0 !important;
+  margin-bottom: 0 !important;
+  padding: 6rem 4rem 0 4rem !important;
 }
 .iz-bg-block-lower {
-  padding: 0 0 $block-space-v 0 !important;
-  margin-top: 0 !important
+  padding: 0 0 6rem 0 !important;
+  margin-top: 0 !important;
+  padding: 0 4rem 6rem 4rem !important;
 }
 
 .iz-bg-block {
-	margin: 4rem 0  !important;
+  margin: 4rem 0  !important;
+  padding: 6rem 4rem !important;
 }
 
 .iz-bg-block,
@@ -57,7 +58,6 @@ article .entry-title a {
   max-width: none !important;
   width: 100% !important;
   background: #f2f2f2;
-  padding: $block-space-v 4rem !important;
 }
 
 
