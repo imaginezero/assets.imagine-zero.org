@@ -19,6 +19,12 @@ article .entry-title a {
 	background-color: #f0f0f0
 }
 
+/* Observed in a 3-column grid each with a float-left image: Image had no margin with viewport width >= 1000px */
+.wp-block-image .alignleft {
+    float: left;
+    margin: .5em 1em .5em 0 !important;
+}
+
 .iz-no-margin {
 	margin: 0;
 }
