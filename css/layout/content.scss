@@ -20,9 +20,14 @@ article .entry-title a {
 }
 
 /* Observed in a 3-column grid each with a float-left image: Image had no margin with viewport width >= 1000px */
-.wp-block-image .alignleft {
+.iz-image-float-in-column {
     float: left;
-    margin: .5em 1em .5em 0 !important;
+	margin: 0 1em .5em 0 !important;
+	figure { margin: 0 !important }
+}
+
+.wp-block-columns .wp-block-column > .wp-block-image:has(>.alignleft):first-child {
+    margin-bottom: 0;
 }
 
 .iz-no-margin {
