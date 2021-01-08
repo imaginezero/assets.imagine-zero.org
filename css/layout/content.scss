@@ -4,6 +4,8 @@ article.category-article header.entry-header .post-meta-wrapper .post-date {
 	display: none
 }
 
+body.page #site-content header .intro-text { display: none }
+
 /* Underlines post titles in overviews to indicate that they're clickable */
 article .entry-title a {
     text-decoration: underline !important;
