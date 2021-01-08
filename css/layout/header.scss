@@ -22,3 +22,15 @@
     display: none !important;
   }
 }
+
+#site-header .primary-menu li.menu-item-has-children:hover > ul.sub-menu {
+	transition: none !important;
+	border-radius: 0 !important;
+	top: calc(100% + 1rem);
+	box-shadow: 0 0 8px 0px rgba(100, 100, 100, 0.5);
+}
+.primary-menu > li > ul:after {
+	display: none !important;
+	border: none !important;
+	background: none !important;
+}
