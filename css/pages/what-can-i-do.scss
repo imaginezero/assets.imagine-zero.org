@@ -30,8 +30,8 @@ body.page-id-4923 {
     .wp-block-embed {
         margin: 2rem !important;
     }
-  }
-  .wp-block-group :nth-child(2) {
-    margin-top: 0 !important;
+    & + .wp-block-group {
+      margin-top: 0 !important;
+    }
   }
 }
