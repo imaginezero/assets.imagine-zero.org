@@ -34,4 +34,22 @@ body.page-id-4923 {
       margin-top: 0 !important;
     }
   }
+
+  .iz-matcha {
+    // background: black !important;
+    img {
+      margin: 0 2rem 2rem 0;
+    }
+    @media (max-width: 700px) {
+    .wp-block-image {
+        float: none !important;
+        text-align: center;
+        figure  {
+          float: none !important;
+          display: inline-block;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
