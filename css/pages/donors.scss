@@ -2,11 +2,8 @@
 
 body.page-id-4279 {
     .wp-block-coblocks-hero__inner {
-        // align-items: start;
-        background-color: black;
         background-position: center 200px !important;
-
-        // .has-background-image {
+        background-repeat: no-repeat !important;
         background-size: 100%;
         @media (max-width:  2800px) { background-position: center 230px !important;}
         @media (max-width:  2100px) { background-position: center 240px !important;}

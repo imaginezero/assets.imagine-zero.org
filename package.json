@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass ./css/style.scss public/style.css; cp -R images public/images",
     "watch": "sass --watch ./css/style.scss public/style.css",
-    "serve": "http-server public -c-1"
+    "serve": "npm run build; http-server public -c-1"
   },
   "repository": {
     "type": "git",

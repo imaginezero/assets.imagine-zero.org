@@ -63,6 +63,10 @@ body.home {
     .wp-block-button {
       width: calc(50% - 1rem);
       margin: 0.5rem;
+      display: flex;
+      > a {
+        @media (max-width:  800px) { padding-left: 0; padding-right: 0;}
+      }
       &:last-child {
         width: calc(100% - 1rem);
       }
@@ -104,6 +108,7 @@ body.home {
   .iz-home-track-slider {
     @include slider.track-slider;
     margin: 2rem auto;
+
   }
   .iz-home-track-icons {
     display: flex;
@@ -118,11 +123,11 @@ body.home {
       margin: 0.5rem;
       width: 50px;
       height: 50px;
+      border-radius: 50px;
       img {
         width: inherit;
         height: inherit;
       }
-      border-radius: 50px;
     }
   }
 }
