@@ -20,7 +20,6 @@ body.page-id-4279 {
 
     .iz-donors-circles {
 
-
         @media (min-width: 1700px) { 
             max-width: 1700px;
             strong {
@@ -52,20 +51,12 @@ body.page-id-4279 {
                     display: flex;
                     background: #f2f2f2;
                     text-align: center;
-                    // width: 40vw;
-                    // height: 20vw;
                     border-radius: 500px;
                     padding: 2vw;
                     margin: 2rem 0;
-                    // @media (max-width: 600px) { margin: 0.5vw; }
-                    // margin: 2rem;
-                    // &:first-child { margin-left: 0 }
-                    // &:last-child { margin-right: 0 }
                     min-width: 200px;
                     max-width: 40%;
 
-                    // @media (max-width: 1000px) { font-size: 1.9vw; }
-                    // @media (max-width: 900px) { font-size: 2.1vw; }
                     @media (max-width: 900px) { min-width: 300px }
                     @media (max-width: 800px) { min-width: 250px }
                     @media (max-width: 700px) { min-width: 200px }
