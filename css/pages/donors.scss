@@ -82,4 +82,11 @@ body.page-id-4279 {
             }
         }
     }
+
+    .wp-block-image figure {
+        max-width: none !important;
+        @media (max-width: 600px) { max-width: 30vw !important;}
+    }
+
+    .wp-block-buttons .wp-block-button { display: flex;}
 }
