@@ -25,9 +25,13 @@ body.page-id-4923 {
       background: linear-gradient(#040808,#0c1718, #0c1718);
     // background: black;
     margin-top: 4rem;
+    margin-bottom: 0;
 
-      .wp-block-embed {
-          margin: 2rem !important;
-      }
+    .wp-block-embed {
+        margin: 2rem !important;
+    }
+  }
+  .wp-block-group :nth-child(2) {
+    margin-top: 0 !important;
   }
 }
