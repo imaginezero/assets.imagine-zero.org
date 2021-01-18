@@ -1,3 +1,5 @@
+@use '../variables' as variables;
+
 /* ### Header ### */
 
 /* Reduces vertical whitespace */
@@ -21,6 +23,23 @@
 @media (min-width: 1000px) {   #site-header .toggle-wrapper   {
     display: none !important;
   }
+}
+.primary-menu .iz-nav-action {
+	background: variables.$colorPrimary;
+	border-radius: 3px;
+	padding: 4px 1.5rem;
+	margin-left: 2rem;
+	margin-right: -0.5rem;
+	> a {
+		color: #ffffff !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	};
+	> .icon { display: none;}
+}
+
+.modal-menu .iz-nav-action {
+	background-color: #f1fff9;
 }
 
 #site-header .primary-menu li.menu-item-has-children:hover > ul.sub-menu {
