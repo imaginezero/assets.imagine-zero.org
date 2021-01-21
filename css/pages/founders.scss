@@ -1,3 +1,5 @@
+@use '../variables' as variables;
+
 body.page-id-4573 {
   .wp-block-jetpack-layout-grid {
       background: linear-gradient(#040808,#0c1718, #0c1718);
@@ -18,4 +20,61 @@ body.page-id-4573 {
       }
     }
   }
+  .iz-challenges-submitted {
+		display: none;
+	}
+	.coblocks-form__submitted { display: none;}
+
+	.entry-content > .iz-bg-block:nth-child(2) {
+		margin-top: 0 !important;
+	} 
+	.iz-challenges-headline {
+		h2 { margin: 0 }
+		margin-bottom: 4rem;
+	} 
+
+	summary {
+		font-family: variables.$fontHeadline;
+		background-color: #3C3C3C;
+		color: variables.$colorPaleGray;
+		em, strong {
+			background-color: variables.$colorBlue;
+			display: inline-block;
+			vertical-align: text-bottom;
+			margin: 3px 0.1rem 1px 0;
+			// &:first
+			// &:first-of-type { 
+				// margin-left: 23px;
+			// }
+			padding: 0px 8px;
+			font-style: normal;
+			border-radius: 3px;
+			font-size: 0.8em;
+		}
+		strong  {
+			background-color: variables.$colorRed;
+			font-weight: normal;
+		}
+	}
+	details {
+		> div { border: none }
+		form {
+			display: flex;
+			align-content: stretch;
+			flex-flow: row wrap;
+			margin-top: 4rem;
+			label { display: none }
+			input[type=email] {
+				width: auto;
+				flex: 100 0px;
+				border: 2px solid variables.$colorPrimary;
+				margin-right: 2rem;
+				padding: 1rem;
+			}
+			.wp-block-button {
+				padding: 0;
+				button { padding: 1rem 2rem}
+			}
+		}
+	}
 }
