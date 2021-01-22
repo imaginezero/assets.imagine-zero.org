@@ -31,7 +31,11 @@ body.page-id-4573 {
 	.iz-challenges-headline {
 		h2 { margin: 0 }
 		margin-bottom: 4rem;
-	} 
+  } 
+  
+  .iz-challenges-bootstrap summary em {
+			background-color: variables.$colorDarkGreen;
+  }
 
 	summary {
 		font-family: variables.$fontHeadline;
