@@ -1,4 +1,8 @@
-@use '../variables' as variables;
+@use '../../variables' as variables;
+
+
+$colorDarkBlue: transparentize(variables.$colorBlue, 0.3);
+$colorDarkRed: transparentize(variables.$colorRed, 0.3);
 
 body.page-id-4573 {
   .wp-block-jetpack-layout-grid {
@@ -34,7 +38,7 @@ body.page-id-4573 {
   } 
   
   .iz-challenges-bootstrap summary em {
-			background-color: variables.$colorDarkGreen;
+	background-color: variables.$colorDarkGreen;
   }
 
 	summary {
@@ -42,7 +46,8 @@ body.page-id-4573 {
 		background-color: #3C3C3C;
 		color: variables.$colorPaleGray;
 		em, strong {
-			background-color: variables.$colorBlue;
+			background-color: $colorDarkBlue;
+			color: variables.$colorDarkGray;
 			display: inline-block;
 			vertical-align: text-bottom;
 			margin: 3px 0.1rem 1px 0;
@@ -56,7 +61,7 @@ body.page-id-4573 {
 			font-size: 0.8em;
 		}
 		strong  {
-			background-color: variables.$colorRed;
+			background-color: $colorDarkRed;
 			font-weight: normal;
 		}
 	}
