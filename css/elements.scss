@@ -22,7 +22,9 @@ button, .tw-btn-rounded .button, .tw-btn-rounded .faux-button, .tw-btn-rounded .
 	white-space: normal;
 }
 
-
+.iz-cta-primary .wp-block-button__link {
+	white-space: nowrap;
+}
 
 // # Alerts
 
