@@ -83,16 +83,20 @@ body.home {
     }
   }
 
-  .iz-home-news-small .entry-wrapper {
-    display: flex;
-    flex-direction: column;
+  .iz-home-news-small {
+    padding-top: 4rem;
+    
+    .entry-wrapper {
+      display: flex;
+      flex-direction: column;
 
-    .entry-meta {
-      order: -1;
-      margin-bottom: 0.5rem;
-      .byline {
-        display: none;
-      }  
+      .entry-meta {
+        order: -1;
+        margin-bottom: 0.5rem;
+        .byline {
+          display: none;
+        }  
+      }
     }
   }
 
