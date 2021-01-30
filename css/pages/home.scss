@@ -61,17 +61,25 @@ body.home {
       }
     }
   }
+  .iz-track-record {
+    margin-bottom: 0 !important;
+  }
   
-  .iz-home-news-big article {
+  .iz-home-news-big {
     background-color: black;
-    margin-bottom: 4rem;
+    margin-top: 0 !important;
+    
+    article {
+      background-color: black;
+      margin-bottom: 4rem;
 
-    .post-thumbnail {
-      margin: 0;
-    }
-    .entry-wrapper {
-      padding: 2rem;
-      color: white;
+      .post-thumbnail {
+        margin: 0;
+      }
+      .entry-wrapper {
+        padding: 2rem;
+        color: white;
+      }
     }
   }
 
