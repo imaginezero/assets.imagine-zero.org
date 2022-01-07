@@ -3,23 +3,10 @@
 body.page-id-84,
 body.page-id-491 {
 
-  .tlp-team-container {
+  .rt-team-container .single-team-area {
 
-    .team-member {
-      cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
-
-      color: variables.$colorBlack;
-      
-      .tlp-content {
-        > * {color: variables.$colorBlack};
-        color: inherit;
-        
-        h3, .tlp-position {
-          font-size: inherit;
-          color: inherit;
-        }
-      }
+    h3, .tlp-position {
+      color: variables.$colorBlack !important;
     } 
   }
 }
