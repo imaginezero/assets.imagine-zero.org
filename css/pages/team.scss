@@ -5,9 +5,21 @@ body.page-id-491 {
 
   .rt-team-container .single-team-area {
 
+    img { 
+      opacity: 0.07;
+      filter: grayscale(90%) contrast(50);
+    }
+    &:hover img {
+      opacity: 1;
+      filter: none;
+    }
+
     h3, .tlp-position {
       color: variables.$colorBlack !important;
     } 
+  }
+  .tlp-content {
+    background: white !important;
   }
 }
 
