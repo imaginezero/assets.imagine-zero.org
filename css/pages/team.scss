@@ -1,3 +1,31 @@
+@use '../variables' as variables;
+
+body.page-id-84,
+body.page-id-491 {
+
+  .tlp-team-container {
+
+    .team-member {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+
+      color: variables.$colorBlack;
+      
+      .tlp-content {
+        > * {color: variables.$colorBlack};
+        color: inherit;
+        
+        h3, .tlp-position {
+          font-size: inherit;
+          color: inherit;
+        }
+      }
+    } 
+  }
+}
+
+
+
 // @use '../variables' as variables;
 
 // body.page-id-84,
